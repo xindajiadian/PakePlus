@@ -29,26 +29,26 @@
                 <h1 class="title">MacOS</h1>
                 <div class="item">
                     <span>{{ langMap[lang].mostPopular }}</span>
-                    <a :href="proxyGithub(macArm.browser_download_url, 5)">
+                    <a :href="proxyGithub(macArm?.browser_download_url, 5)">
                         Apple Silicon({{ langMap[lang].fastLink }})
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(macArm.browser_download_url, 4)"
+                        :href="proxyGithub(macArm?.browser_download_url, 4)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed2 }}
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(macArm.browser_download_url, 3)"
+                        :href="proxyGithub(macArm?.browser_download_url, 3)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed3 }}
                     </a>
                     <a
                         v-if="!isMobile()"
-                        :href="macArm.browser_download_url"
+                        :href="macArm?.browser_download_url"
                         class="githubLink"
                     >
                         {{ langMap[lang].gitlink }}
@@ -56,24 +56,24 @@
                 </div>
                 <div v-if="!isMobile()" class="item">
                     <span>{{ langMap[lang].oldSystem }}</span>
-                    <a :href="proxyGithub(macX64.browser_download_url, 5)">
+                    <a :href="proxyGithub(macX64?.browser_download_url, 5)">
                         Intel X64({{ langMap[lang].fastLink }})
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(macX64.browser_download_url, 4)"
+                        :href="proxyGithub(macX64?.browser_download_url, 4)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed2 }}
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(macX64.browser_download_url, 3)"
+                        :href="proxyGithub(macX64?.browser_download_url, 3)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed3 }}
                     </a>
-                    <a :href="macX64.browser_download_url" class="githubLink">
+                    <a :href="macX64?.browser_download_url" class="githubLink">
                         {{ langMap[lang].gitlink }}
                     </a>
                 </div>
@@ -113,26 +113,26 @@
                 <h1 class="title">Windows</h1>
                 <div class="item">
                     <span>{{ langMap[lang].mostPopular }}</span>
-                    <a :href="proxyGithub(windowsX64.browser_download_url, 5)">
+                    <a :href="proxyGithub(windowsX64?.browser_download_url, 5)">
                         X64 ({{ langMap[lang].fastLink }})
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(windowsX64.browser_download_url, 4)"
+                        :href="proxyGithub(windowsX64?.browser_download_url, 4)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed2 }}
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(windowsX64.browser_download_url, 3)"
+                        :href="proxyGithub(windowsX64?.browser_download_url, 3)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed3 }}
                     </a>
                     <a
                         v-if="!isMobile()"
-                        :href="windowsX64.browser_download_url"
+                        :href="windowsX64?.browser_download_url"
                         class="githubLink"
                     >
                         {{ langMap[lang].gitlink }}
@@ -142,7 +142,7 @@
                     <span>{{ langMap[lang].rarelyUsed }}</span>
                     <a
                         :href="
-                            proxyGithub(windowsArm64.browser_download_url, 5)
+                            proxyGithub(windowsArm64?.browser_download_url, 5)
                         "
                     >
                         ARM64 ({{ langMap[lang].fastLink }})
@@ -150,7 +150,7 @@
                     <a
                         v-if="!isMobile() && isDownPage()"
                         :href="
-                            proxyGithub(windowsArm64.browser_download_url, 4)
+                            proxyGithub(windowsArm64?.browser_download_url, 4)
                         "
                         class="githubLink"
                     >
@@ -159,7 +159,7 @@
                     <a
                         v-if="!isMobile() && isDownPage()"
                         :href="
-                            proxyGithub(windowsArm64.browser_download_url, 3)
+                            proxyGithub(windowsArm64?.browser_download_url, 3)
                         "
                         class="githubLink"
                     >
@@ -167,7 +167,7 @@
                     </a>
                     <a
                         v-if="!isMobile()"
-                        :href="windowsArm64.browser_download_url"
+                        :href="windowsArm64?.browser_download_url"
                         class="githubLink"
                     >
                         {{ langMap[lang].gitlink }}
@@ -208,26 +208,26 @@
                 <h1 class="title">Linux</h1>
                 <div class="item">
                     <span>{{ langMap[lang].mostPopular }}</span>
-                    <a :href="proxyGithub(linuxDeb.browser_download_url, 5)">
+                    <a :href="proxyGithub(linuxDeb?.browser_download_url, 5)">
                         deb({{ langMap[lang].fastLink }})
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(linuxDeb.browser_download_url, 4)"
+                        :href="proxyGithub(linuxDeb?.browser_download_url, 4)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed2 }}
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(linuxDeb.browser_download_url, 3)"
+                        :href="proxyGithub(linuxDeb?.browser_download_url, 3)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed3 }}
                     </a>
                     <a
                         v-if="!isMobile()"
-                        :href="linuxDeb.browser_download_url"
+                        :href="linuxDeb?.browser_download_url"
                         class="githubLink"
                     >
                         {{ langMap[lang].gitlink }}
@@ -235,48 +235,51 @@
                 </div>
                 <div v-if="!isMobile()" class="item">
                     <span>{{ langMap[lang].mostPopular }}</span>
-                    <a :href="proxyGithub(linuxRpm.browser_download_url, 5)">
+                    <a :href="proxyGithub(linuxRpm?.browser_download_url, 5)">
                         rpm({{ langMap[lang].fastLink }})
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(linuxRpm.browser_download_url, 4)"
+                        :href="proxyGithub(linuxRpm?.browser_download_url, 4)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed2 }}
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(linuxRpm.browser_download_url, 3)"
+                        :href="proxyGithub(linuxRpm?.browser_download_url, 3)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed3 }}
                     </a>
-                    <a :href="linuxRpm.browser_download_url" class="githubLink">
+                    <a
+                        :href="linuxRpm?.browser_download_url"
+                        class="githubLink"
+                    >
                         {{ langMap[lang].gitlink }}
                     </a>
                 </div>
                 <div v-if="!isMobile()" class="item">
                     <span>{{ langMap[lang].largeVolume }}</span>
-                    <a :href="proxyGithub(linuxImage.browser_download_url, 5)">
+                    <a :href="proxyGithub(linuxImage?.browser_download_url, 5)">
                         AppImage({{ langMap[lang].fastLink }})
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(linuxImage.browser_download_url, 4)"
+                        :href="proxyGithub(linuxImage?.browser_download_url, 4)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed2 }}
                     </a>
                     <a
                         v-if="!isMobile() && isDownPage()"
-                        :href="proxyGithub(linuxImage.browser_download_url, 3)"
+                        :href="proxyGithub(linuxImage?.browser_download_url, 3)"
                         class="githubLink"
                     >
                         {{ langMap[lang].speed3 }}
                     </a>
                     <a
-                        :href="linuxImage.browser_download_url"
+                        :href="linuxImage?.browser_download_url"
                         class="githubLink"
                     >
                         {{ langMap[lang].gitlink }}
@@ -438,7 +441,7 @@ const isDownPage = () => {
 }
 
 // get last release
-const lastRelease = data[0] || {
+const lastRelease = data || {
     url: 'https://api.github.com/repos/Sjj1024/PakePlus/releases/207589840',
     assets_url:
         'https://api.github.com/repos/Sjj1024/PakePlus/releases/207589840/assets',
